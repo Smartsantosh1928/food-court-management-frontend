@@ -39,7 +39,9 @@ export function Signin() {
       },
       body: JSON.stringify({...details,"fullName": null,"enabled": null,"role": null})
     }).then(res => res.json())
-    .then(data => console.log(data))
+    .then(data => {
+      console.log(data)
+    })
   }
 
   return (
