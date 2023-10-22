@@ -1,11 +1,15 @@
-import React, { Component } from 'react'
+import React from 'react'
+import { useEffect } from 'react'
 
-export class Home extends Component {
-  render() {
-    return (
-      <div>Home</div>
-    )
-  }
+export default function Home() {
+
+  useEffect(() => {
+    console.log("Home");
+  },[])
+
+  return (
+    <div className=' w-full h-full'>
+      Home
+    </div>
+  )
 }
-
-export default Home
